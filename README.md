@@ -2,7 +2,9 @@
 
 Two independently deployable TypeScript apps: a Next.js dashboard on **Vercel** and an Express API with background demo parsing on **Render** (or Railway). Supabase provides PostgreSQL, public dashboard reads, and authentication for replay submissions.
 
-**Start with [the architecture and deployment guide](docs/architecture-and-setup.md).**
+**Start with [the architecture and deployment guide](docs/architecture-and-setup.md).** For the existing repository, use [the current deployment checklist](docs/deploy-current-repository.md).
+
+Open `/demo` for an interactive presentation dashboard with clearly labeled fictional data. Real player pages still use Supabase.
 
 ```text
 frontend/           Next.js App Router; publish as cs2-tracker-web
@@ -10,7 +12,7 @@ backend/            Express API + isolated parser processes; publish as cs2-trac
   db/001_initial.sql  Supabase schema, durable queue, read policies
   render.yaml        Render Blueprint for the standalone backend repository
   Dockerfile         Node 24, native CS2 parser, bzip2
-.github/workflows/  Checks for this combined source repository
+render.yaml         Render Blueprint for this combined source repository
 ```
 
 ## Parser dependency correction
