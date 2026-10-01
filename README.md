@@ -1,3 +1,6 @@
+push min
+
+
 # CS2 Tracker
 
 Two independently deployable TypeScript apps: a Next.js dashboard on **Vercel** and an Express API with background demo parsing on **Render** (or Railway). Supabase provides PostgreSQL, public dashboard reads, and authentication for replay submissions.
