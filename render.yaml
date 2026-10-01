@@ -3,7 +3,7 @@ services:
   - type: web
     name: cs2-tracker-api
     runtime: docker
-    branch: coderabbit/decouple-cs2-tracker-architecture/7fa48912
+    branch: main
     rootDir: backend
     dockerContext: .
     plan: standard
