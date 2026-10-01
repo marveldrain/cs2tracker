@@ -1,0 +1,4 @@
+import { SearchForm } from "@/components/search-form";
+export default function Home() {
+  return <><section className="hero"><span className="eyebrow">YOUR GAME, IN DETAIL</span><h1>Every match<br /><span>tells a story.</span></h1><p className="intro">Explore player performance and chat history from imported Counter-Strike 2 replays.</p></section><section className="panel"><SearchForm /></section><div className="features"><article><h2>Player performance</h2><p className="muted">Kills, deaths, assists, and headshots across imported matches.</p></article><article><h2>The match conversation</h2><p className="muted">Recorded player messages, with their match and demo tick.</p></article><article><h2>Keep playing</h2><p className="muted">Submit a replay and come back when your import is ready.</p></article></div></>;
+}

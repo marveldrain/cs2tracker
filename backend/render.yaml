@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: cs2-tracker-api
+    runtime: docker
+    plan: standard
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      - key: PORT
+        value: '3001'
+      - key: WORKER_CONCURRENCY
+        value: '1'
+      - key: TRUST_PROXY_HOPS
+        value: '1'
+      - key: DATABASE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: FRONTEND_ORIGIN
+        sync: false
